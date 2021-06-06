@@ -1,0 +1,44 @@
+@import "vars";
+@import "mixins";
+@import "vendor/reset";
+@import "vendor/swiper";
+
+html {
+   font-size: 62.5%;
+}
+
+body {
+   font-family: 'Roboto', sans-serif;
+   font-size: 1.4rem;
+   font-weight: 400;
+   background-color: #fff;
+   color: $black;
+
+   &.no-scroll {
+      overflow: hidden;
+   }
+}
+
+*,
+*:before,
+*:after {
+   box-sizing: border-box;
+}
+
+@import "blocks/header";
+@import "blocks/logo";
+@import "blocks/container";
+@import "blocks/nav";
+@import "blocks/contact-us";
+@import "blocks/social";
+@import "blocks/page";
+@import "blocks/btn";
+@import "blocks/breadcrumbs";
+@import "blocks/main";
+@import "blocks/product";
+@import "blocks/slider";
+@import "blocks/about";
+@import "blocks/analogs";
+@import "blocks/footer";
+@import "blocks/modal";
+@import "blocks/auth";

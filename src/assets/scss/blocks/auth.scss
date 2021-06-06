@@ -1,0 +1,65 @@
+.auth__group {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 2rem;
+}
+
+.auth__title {
+   margin-bottom: 1.5rem;
+
+   font-size: 1.6rem;
+   font-weight: 500;
+   color: #797979;
+}
+
+.auth__input {
+   padding: 1.2rem 3rem;
+
+   width: 100%;
+
+   font-size: 1.6rem;
+   font-weight: 500;
+   border: 1px solid transparent;
+   border-radius: $radius;
+   background-color: #F8F8F8;
+
+   &::placeholder {
+      font-size: 1.6rem;
+      font-weight: 400;
+      color: #ACACAC;
+   }
+
+   &:hover,
+   &:focus {
+      border-color: #B8B8B8;
+   }
+}
+
+.auth__forget-password {
+   font-size: 1.6rem;
+   color: #0B0B0B;
+   text-decoration: underline;
+
+   &:hover {
+      text-decoration: none;
+   }
+}
+
+.auth__btn {
+   width: 43%;
+
+   @include breakpoint($mobileL-bp) {
+      margin-bottom: 1rem;
+      width: auto;
+   }
+}
+
+.auth__btn--grey {
+   width: 52%;
+
+   @include breakpoint($mobileL-bp) {
+      width: auto;
+   }
+
+   font-size: 1.4rem;
+}

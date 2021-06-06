@@ -1,0 +1,64 @@
+.contact-us {
+   display: flex;
+   align-items: center;
+
+   @include breakpoint($laptop-bp) {
+      flex-direction: column;
+      align-items: flex-end;
+      margin-top: 7rem;
+   }
+}
+
+.contact-us__btn {
+   color: $yellow;
+
+   position: relative;
+
+   &:after {
+      content: "";
+      width: 100%;
+      border: 1px dashed #FFD637;
+
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      z-index: 1;
+   }
+
+   @include breakpoint($laptop-bp) {
+      margin-bottom: 1.8rem;
+      font-size: 1.6rem;
+   }
+}
+
+.contact-us__link {
+   color: #fff;
+   font-weight: 700;
+
+   position: relative;
+
+   @include breakpoint($laptop-bp) {
+      margin-bottom: 1rem;
+
+      font-size: 1.8rem;
+      font-weight: 400;
+
+      &:last-child {
+         margin-bottom: 0;
+      }
+   }
+}
+
+.contact-us__line {
+   display: block;
+   margin: 0 15px;
+
+   width: 1px;
+   height: 15px;
+
+   background-color: #B8B8B8;
+
+   @include breakpoint($laptop-bp) {
+      display: none;
+   }
+}

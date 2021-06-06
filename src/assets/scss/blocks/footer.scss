@@ -1,0 +1,171 @@
+.footer {
+   margin-top: auto;
+   padding: 6.5rem 0;
+
+   background-color: $yellow;
+
+   @include breakpoint($laptopL-bp) {
+      padding: 4rem 0;
+   }
+}
+
+.footer__inner {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   @include breakpoint($laptopL-bp) {
+      justify-content: space-evenly;
+   }
+
+   @include breakpoint($tablet-bp) {
+      justify-content: space-between;
+      flex-wrap: wrap;
+   }
+
+   @media screen and (max-width: 674px) {
+      justify-content: center;
+   }
+}
+
+.footer__left,
+.footer__right {
+   display: flex;
+   align-items: center;
+}
+
+.footer__left {
+   @include breakpoint($laptopL-bp) {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-right: 1.5rem;
+   }
+
+   @media screen and (max-width: 674px) {
+      margin-bottom: 3.2rem;
+      align-items: center;
+   }
+
+   @include breakpoint($tablet-618-bp) {
+      margin-right: 0;
+   }
+}
+
+.footer__title {
+   display: flex;
+   align-items: center;
+
+   h1 {
+      font-size: 3.2rem;
+      font-weight: 700;
+
+      width: 306px;
+
+      @include breakpoint($tablet-bp) {
+         font-size: 2.4rem;
+      }
+
+      @include breakpoint($mobileL-bp) {
+         font-size: 2.2rem;
+         text-align: center;
+         width: auto;
+      }
+   }
+
+   @include breakpoint($laptopL-bp) {
+      margin-bottom: 1.4rem;
+   }
+
+   @media screen and (max-width: 674px) {
+      margin-bottom: 2rem;
+   }
+
+   @include breakpoint($mobileL-bp) {
+      margin-bottom: 1.4rem;
+   }
+}
+
+.footer__mail-icon {
+   margin-right: 4.2rem;
+
+   @include breakpoint($laptopL-bp) {
+      margin-right: 1.4rem;
+   }
+
+   @include breakpoint($mobileL-bp) {
+      display: none;
+   }
+}
+
+.footer__text {
+   font-size: 1.6rem;
+
+   width: 254px;
+
+   @include breakpoint($laptopL-bp) {
+      width: 359px;
+   }
+
+   @include breakpoint($tablet-bp) {
+      font-size: 1.4rem;
+   }
+
+   @media screen and (max-width: 674px) {
+      text-align: center;
+   }
+
+   @include breakpoint($mobileL-bp) {
+      font-size: 1.2rem;
+      width: 100%;
+   }
+}
+
+.footer__form {
+   display: flex;
+
+   @include breakpoint($laptopL-bp) {
+      flex-direction: column;
+   }
+}
+
+.footer__input {
+   margin-right: 2rem;
+   padding: 1.4rem 1.9rem;
+
+   width: 250px;
+
+   color: $black;
+   border: 1px solid $black;
+   border-radius: $radius;
+   background-color: transparent;
+
+   &::placeholder {
+      color: $black;
+   }
+
+   @include breakpoint($laptopL-bp) {
+      width: 100%;
+      margin-right: 0;
+      border-radius: 4px 4px 0 0;
+   }
+}
+
+.footer__btn {
+   padding: 0 3rem;
+
+   color: $yellow;
+   background-color: $black;
+   border-radius: $radius;
+
+   transition: color .2s ease;
+
+   &:hover {
+      color: #fff;
+      background-color: $black;
+   }
+
+   @include breakpoint($laptopL-bp) {
+      width: 100%;
+      border-radius: 0 0 4px 4px;
+   }
+}

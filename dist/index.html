@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <link rel="stylesheet" href="assets/css/style.min.css">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+   
+   <!-- Useful meta tags -->
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="robots" content="index, follow">
+   <meta name="google" content="notranslate">
+   <meta name="format-detection" content="telephone=no">
+   <meta name="description" content="">
+   
+   <title>Richbee</title>
+</head>
+
+<body>
+   <svg style="display: none">
+      <svg class="hidden">
+         <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 15" id="vk">
+            <path d="M24.777 13.09c-.067-.112-.483-1.015-2.483-2.871-2.094-1.944-1.813-1.629.71-4.99 1.536-2.047 2.15-3.297 1.958-3.831-.183-.51-1.313-.375-1.313-.375l-3.757.021s-.278-.037-.485.086c-.202.122-.332.404-.332.404s-.595 1.584-1.389 2.931c-1.674 2.842-2.344 2.992-2.617 2.816-.636-.411-.477-1.653-.477-2.535 0-2.755.417-3.903-.814-4.2-.41-.098-.71-.164-1.755-.175-1.34-.014-2.477.005-3.119.319-.428.21-.758.676-.556.703.248.033.81.151 1.11.558.385.523.371 1.701.371 1.701s.222 3.243-.517 3.646c-.508.277-1.203-.288-2.696-2.867-.764-1.32-1.342-2.782-1.342-2.782s-.11-.272-.31-.417a1.558 1.558 0 00-.577-.233l-3.573.022s-.536.016-.732.248c-.175.208-.014.636-.014.636s2.797 6.543 5.962 9.842c2.905 3.024 6.202 2.825 6.202 2.825h1.494s.452-.05.682-.298c.212-.229.204-.657.204-.657s-.03-2.005.902-2.3c.917-.29 2.096 1.938 3.344 2.796.944.648 1.661.506 1.661.506l3.34-.047s1.746-.108.918-1.481z"></path>
+         </symbol>
+      </svg>
+      <svg class="hidden">
+         <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="whatsaap">
+            <path d="M17.194 2.806A9.518 9.518 0 0010.419 0a9.518 9.518 0 00-6.774 2.806A9.518 9.518 0 00.839 9.581c0 1.62.41 3.214 1.189 4.625L0 20l5.794-2.028a9.576 9.576 0 004.625 1.19 9.518 9.518 0 006.775-2.807A9.518 9.518 0 0020 9.581a9.52 9.52 0 00-2.806-6.775zM15.156 13.14l-1.106 1.106c-.917.916-3.516-.198-5.807-2.489-2.29-2.29-3.405-4.89-2.489-5.807L6.86 4.844c.23-.229.6-.229.83 0l1.382 1.383c.23.229.23.6 0 .83l-.83.829a8.138 8.138 0 003.872 3.871l.83-.83a.587.587 0 01.83 0l1.382 1.383c.229.23.229.6 0 .83z"></path>
+         </symbol>
+      </svg>
+      <svg class="hidden">
+         <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" id="instagram">
+            <path d="M17.07 0H2.93A2.93 2.93 0 000 2.93v14.14A2.93 2.93 0 002.93 20h14.14A2.93 2.93 0 0020 17.07V2.93A2.93 2.93 0 0017.07 0zM10 15.313a5.281 5.281 0 01-5.273-5.274A5.281 5.281 0 0110 4.766a5.281 5.281 0 015.273 5.273A5.281 5.281 0 0110 15.313zm6.445-10.547a1.175 1.175 0 01-1.172-1.172c0-.645.528-1.172 1.172-1.172.645 0 1.172.527 1.172 1.172 0 .644-.527 1.172-1.172 1.172z"></path>
+         </symbol>
+      </svg>
+      <svg class="hidden">
+         <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 115 19" id="logo-title">
+            <path d="M12.307 18.8l-4.11-5.94c-.463.053-.943.08-1.44.08h-4.83v5.86H.026V.32h6.732c2.295 0 4.093.563 5.395 1.69 1.302 1.126 1.953 2.675 1.953 4.646 0 1.443-.36 2.666-1.08 3.67-.701.985-1.712 1.698-3.031 2.138l4.394 6.336h-2.082zm-5.6-7.524c1.78 0 3.142-.405 4.084-1.214.942-.81 1.414-1.945 1.414-3.406 0-1.496-.472-2.64-1.414-3.432-.942-.81-2.303-1.214-4.085-1.214H1.927v9.266h4.78zM18.592.32h1.902V18.8h-1.902V.32zm15.565 18.638c-1.782 0-3.392-.404-4.83-1.214a8.914 8.914 0 01-3.367-3.353c-.805-1.443-1.207-3.053-1.207-4.831 0-1.778.402-3.38 1.207-4.805a8.809 8.809 0 013.392-3.379c1.439-.81 3.049-1.214 4.83-1.214 1.336 0 2.57.228 3.7.686a7.663 7.663 0 012.878 2.006l-1.208 1.241c-1.404-1.46-3.177-2.191-5.318-2.191-1.422 0-2.715.334-3.88 1.003a7.324 7.324 0 00-2.75 2.746c-.65 1.161-.976 2.464-.976 3.907s.326 2.746.977 3.907a7.324 7.324 0 002.749 2.746c1.165.669 2.458 1.003 3.88 1.003 2.158 0 3.93-.74 5.318-2.218l1.208 1.241a7.884 7.884 0 01-2.904 2.033c-1.13.458-2.363.686-3.7.686zM59.845.32V18.8h-1.876v-8.527H46.715V18.8h-1.901V.32h1.901v8.237H57.97V.32h1.876zm17.2 8.95c1.183.264 2.09.792 2.724 1.584.651.774.977 1.777.977 3.01 0 1.583-.574 2.806-1.722 3.669-1.13.845-2.809 1.267-5.036 1.267h-8.273V.32h7.76c2.004 0 3.554.414 4.65 1.24 1.113.828 1.67 1.998 1.67 3.512 0 1.02-.248 1.892-.745 2.614-.48.704-1.148 1.232-2.004 1.584zm-9.429-7.34v6.706h5.73c1.456 0 2.578-.282 3.366-.845.788-.58 1.182-1.417 1.182-2.508s-.394-1.918-1.182-2.481c-.788-.581-1.91-.872-3.366-.872h-5.73zm6.347 15.26c1.61 0 2.826-.282 3.648-.845.822-.563 1.233-1.443 1.233-2.64 0-2.306-1.627-3.459-4.881-3.459h-6.347v6.944h6.347zm23.841-.08v1.69H85.086V.32h12.333v1.69H86.987v6.573h9.301v1.663h-9.3v6.864h10.816zm17.188 0v1.69h-12.719V.32h12.333v1.69h-10.431v6.573h9.301v1.663h-9.301v6.864h10.817z"></path>
+         </symbol>
+      </svg>
+      <svg class="hidden">
+         <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15 15" id="search">
+            <path d="M11.008 9.682a6.053 6.053 0 001.18-3.588A6.1 6.1 0 006.093 0 6.1 6.1 0 000 6.094a6.1 6.1 0 006.094 6.093c1.342 0 2.58-.441 3.588-1.18L13.674 15 15 13.674l-3.992-3.992zm-4.914.63a4.223 4.223 0 01-4.219-4.218 4.223 4.223 0 014.219-4.219 4.223 4.223 0 014.218 4.219 4.223 4.223 0 01-4.218 4.218z"></path>
+         </symbol>
+      </svg>
+      <svg class="hidden">
+         <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 27" id="user">
+            <path d="M23.046 17.454a13.449 13.449 0 00-5.13-3.218 7.802 7.802 0 003.389-6.431C21.305 3.5 17.803 0 13.5 0S5.695 3.501 5.695 7.805a7.802 7.802 0 003.39 6.431 13.448 13.448 0 00-5.13 3.218A13.412 13.412 0 000 27h2.11c0-6.28 5.11-11.39 11.39-11.39S24.89 20.72 24.89 27H27c0-3.606-1.404-6.996-3.954-9.546zM13.5 13.5a5.702 5.702 0 01-5.695-5.695A5.702 5.702 0 0113.5 2.109a5.702 5.702 0 015.695 5.696A5.702 5.702 0 0113.5 13.5z" fill="#383838"></path>
+         </symbol>
+      </svg>
+      <svg class="hidden">
+         <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" id="cart">
+            <g clip-path="url(#clip0)" fill="#383838" stroke="#383838" stroke-width=".1">
+               <path d="M29.85 4.332l-.04.031.04-.031a.915.915 0 00-.715-.343H6.142l-.635-2.753h0a.915.915 0 00-.892-.71H.865a.915.915 0 000 1.832h3.022L8.25 21.263c.096.416.466.71.892.71h17.339a.915.915 0 000-1.83H9.87l-.643-2.785h17.31c.429 0 .8-.297.894-.715l2.596-11.538a.915.915 0 00-.179-.773zm-1.86 1.487l-2.184 9.708h-17L6.564 5.819H27.99zM12.692 23.027A3.227 3.227 0 009.47 26.25a3.227 3.227 0 003.223 3.223 3.227 3.227 0 003.223-3.223 3.227 3.227 0 00-3.223-3.223zm0 4.615A1.394 1.394 0 0111.3 26.25a1.394 1.394 0 012.785 0c0 .768-.625 1.392-1.393 1.392zm10.385-4.615a3.227 3.227 0 00-3.223 3.223 3.227 3.227 0 003.223 3.223A3.227 3.227 0 0026.3 26.25a3.227 3.227 0 00-3.223-3.223zm0 4.615a1.394 1.394 0 01-1.392-1.392 1.393 1.393 0 012.784 0c0 .768-.624 1.392-1.392 1.392z"></path>
+            </g>
+            <defs>
+               <clipPath id="clip0">
+                  <path fill="#fff" d="M0 0h30v30H0z"></path>
+               </clipPath>
+            </defs>
+         </symbol>
+      </svg>
+      <svg class="hidden">
+         <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 19" id="info">
+            <path d="M9.5 17.417a7.917 7.917 0 100-15.834 7.917 7.917 0 000 15.834zm0-4.75V9.5m0-3.167h.008M9.5 12.667V9.5m0-3.167h.008" stroke="#949494" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+         </symbol>
+      </svg>
+      <svg class="hidden">
+         <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 6" id="in-stock">
+            <path d="M7.274 0h-.842a.564.564 0 00-.465.251L3.145 4.364 1.867 2.5a.566.566 0 00-.465-.25H.561c-.117 0-.185.139-.117.239l2.236 3.26a.58.58 0 00.204.185.548.548 0 00.724-.185L7.388.24c.07-.1.002-.24-.114-.24z" fill="#32A73C"></path>
+         </symbol>
+      </svg>
+      <svg class="hidden">
+         <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 9" id="toggle-arrow">
+            <path d="M6.468.218L.399 6.286a.74.74 0 00-.217.527c0 .2.077.387.217.528l.447.447c.291.29.765.29 1.055 0l5.096-5.096 5.101 5.101c.14.14.328.218.528.218s.387-.077.527-.218l.447-.447a.74.74 0 00.218-.527.74.74 0 00-.218-.527L7.526.218A.742.742 0 006.997 0c-.2 0-.388.077-.53.218z" fill="#383838"></path>
+         </symbol>
+      </svg>
+      <svg class="hidden">
+         <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 16" id="product-play-video">
+            <path d="M12.5 8l-12 7.361V.64L12.5 8z" fill="#383838"></path>
+         </symbol>
+      </svg>
+      <svg class="hidden">
+         <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 52" id="mail">
+            <path d="M1.172 19.472c2.277-1.381 4.553-2.763 6.83-4.146v8.293l-6.83-4.147zm57.656.001l-6.83 4.105v-8.21l6.83 4.104z" fill="#FFD637"></path>
+            <path d="M8.001 2.058H52v32.649H8.001V2.058z" fill="#FAF7F5"></path>
+            <path d="M58.828 19.472v30.47H1.172v-30.47c9.562 5.806 19.124 11.61 28.686 17.414 9.656-5.804 19.314-11.608 28.97-17.414z" fill="#FFD637"></path>
+            <path d="M1.172 49.941l28.686-17.414 28.97 17.414H1.172z" fill="#FFD637"></path>
+            <path d="M59.431 18.47v-.002l-6.26-3.763V2.058c0-.647-.526-1.171-1.173-1.171H8.002A1.17 1.17 0 006.83 2.058v12.609L.564 18.471l.001.001a1.17 1.17 0 00-.565 1v30.47c0 .646.525 1.171 1.172 1.171h23.906a1.172 1.172 0 000-2.344H5.361l24.5-14.872 24.743 14.872H34.922a1.172 1.172 0 000 2.344h23.906c.647 0 1.172-.525 1.172-1.172V19.473a1.17 1.17 0 00-.569-1.003zm-6.83 6.112c1.686-1.012 3.37-2.025 5.055-3.038V47.87L35.758 34.707c5.615-3.374 11.23-6.75 16.844-10.125zm3.953-5.11l-3.384 2.034V17.44l3.384 2.034zM7.394 24.62l16.615 10.087L2.344 47.859V21.555l1.571.954 3.479 2.111zm-.564-3.084l-1.698-1.03-1.702-1.033 3.4-2.064v4.127zm22.42 9.99l-2.982 1.81L9.173 22.959V3.23h41.654v19.685L33.484 33.34l-3.022-1.817a1.172 1.172 0 00-1.212.003z" fill="#383838"></path>
+            <path d="M30 51.113a1.172 1.172 0 100-2.344 1.172 1.172 0 000 2.344zm10.99-26.555a1.17 1.17 0 00-1.171-1.171H19.897a1.172 1.172 0 000 2.343h19.922c.647 0 1.172-.524 1.172-1.172zm4.688-7.226c0-.647-.524-1.172-1.172-1.172H15.21a1.172 1.172 0 000 2.344h29.297c.648 0 1.172-.525 1.172-1.172zm-25.781-6.055h19.922a1.172 1.172 0 000-2.344H19.897a1.172 1.172 0 000 2.344z" fill="#383838"></path>
+         </symbol>
+      </svg>
+      <svg width="0" height="0" class="hidden">
+         <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 13" id="analog-info">
+            <path d="M7.042 3.25a.542.542 0 11-1.084 0 .542.542 0 011.084 0zM6.5 10.292a.406.406 0 01-.406-.407V5.688h-.542a.406.406 0 010-.813H6.5c.224 0 .406.182.406.406v4.604a.406.406 0 01-.406.407z" fill="#383838"></path>
+            <path d="M6.5 13A6.507 6.507 0 010 6.5C0 2.916 2.916 0 6.5 0S13 2.916 13 6.5 10.084 13 6.5 13zM6.5.812A5.694 5.694 0 00.812 6.5 5.694 5.694 0 006.5 12.188 5.694 5.694 0 0012.188 6.5 5.694 5.694 0 006.5.812z" fill="#383838"></path>
+            <path d="M7.719 10.292H5.28a.406.406 0 010-.813h2.44a.406.406 0 010 .813z" fill="#383838"></path>
+         </symbol>
+      </svg>
+      <svg class="hidden">
+         <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" id="discount">
+            <path d="M5.68 2.727A2.73 2.73 0 002.952 0 2.73 2.73 0 00.226 2.727a2.73 2.73 0 002.727 2.726 2.73 2.73 0 002.726-2.726zm-4.1 0a1.374 1.374 0 012.745 0c0 .756-.616 1.372-1.372 1.372A1.374 1.374 0 011.58 2.727zm7.468 3.82A2.73 2.73 0 006.32 9.273 2.73 2.73 0 009.048 12a2.73 2.73 0 002.726-2.727 2.73 2.73 0 00-2.726-2.726zm0 4.099a1.374 1.374 0 01-1.372-1.373c0-.756.615-1.372 1.372-1.372.756 0 1.372.616 1.372 1.372 0 .757-.616 1.373-1.372 1.373zM9.132.35a.735.735 0 00-.999.284L2.567 10.63a.734.734 0 001.283.714l5.566-9.995A.734.734 0 009.132.35z" fill="#fff"></path>
+         </symbol>
+      </svg>
+      <svg class="hidden">
+         <symbol fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" id="modal-close">
+            <path d="M12.215 11l9.533-9.532A.86.86 0 0020.533.252L11 9.785 1.467.252A.86.86 0 10.25 1.468L9.784 11 .251 20.534a.86.86 0 101.216 1.215L11 12.216l9.533 9.533a.857.857 0 001.215 0 .86.86 0 000-1.215L12.215 11z" fill="#B8B8B8"></path>
+         </symbol>
+      </svg>
+   </svg>
+
+   <div class="page">
+      <header class="header">
+         <div class="header__nav-mobile">
+            <button class="header__nav-mobile__btn">
+               <span></span>
+               <span></span>
+               <span></span>
+            </button>
+         </div>
+         <div class="header__top">
+            <nav class="nav">
+               <ul class="header__nav-list">
+                  <li class="header-nav__item">
+                     <a class="header-nav__link" href="#">Оптовикам</a>
+                  </li>
+                  <li class="header-nav__item">
+                     <a class="header-nav__link" href="#">Заказ и доставка</a>
+                  </li>
+                  <li class="header-nav__item">
+                     <a class="header-nav__link" href="#">О компании</a>
+                  </li>
+                  <li class="header-nav__item">
+                     <a class="header-nav__link" href="#">Обзоры</a>
+                  </li>
+                  <li class="header-nav__item">
+                     <a class="header-nav__link" href="#">Контакты</a>
+                  </li>
+               </ul>
+            </nav>
+            <div class="contact-us">
+               <a class="contact-us__btn" href="#">Заказать звонок</a>
+               <ul class="social">
+                  <li class="social__item">
+                     <a class="social__link" href="#" target="_blank">
+                        <svg class="social__icon" width="25px" height="14px">
+                           <use href="#vk"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="social__item">
+                     <a class="social__link" href="#" target="_blank">
+                        <svg class="social__icon" width="20px" height="20px">
+                           <use href="#whatsaap"></use>
+                        </svg>
+                     </a>
+                  </li>
+                  <li class="social__item">
+                     <a class="social__link" href="#" target="_blank">
+                        <svg class="social__icon" width="20px" height="20px">
+                           <use href="#instagram"></use>
+                        </svg>
+                     </a>
+                  </li>
+               </ul>
+               <a class="contact-us__link" href="mailto:info@richbee.ru">info@richbee.ru</a>
+               <span class="contact-us__line"></span>
+               <a class="contact-us__link" href="tel:88005411335">8 (800) 541-13-35 </a>
+            </div>
+         </div>
+         <div class="header__bottom">
+            <div class="container">
+               <div class="header__inner">
+                  <a class="logo" href="#">
+                     <img class="logo__img" src="assets/images/logo.png" alt="">
+                     <svg class="logo__title" width="115px" height="18px">
+                        <use href="#logo-title"></use>
+                     </svg>
+                  </a>
+                  <div class="header__search">
+                     <form class="header__form" action="/">
+                        <input class="header__input" type="text" placeholder="Поиск товаров по сайту">
+                        <button class="header__input-btn  btn" type="button">
+                           <svg class="header__input-btn__icon" width="15px" height="15px">
+                              <use href="#search"></use>
+                           </svg>
+                        </button>
+                     </form>
+                  </div>
+                  <div class="header__user">
+                     <a class="header__card  header__card--user" href="#">
+                        <svg class="header__card-icon" width="27px" height="27px">
+                           <use href="#user"></use>
+                        </svg>
+                        <div class="header__card-content">
+                           <span class="header__card-text">Вход</span>
+                           <span class="header__card-text">Регистрация</span>
+                        </div>
+                     </a>
+                     <a class="header__card  header__card--cart" href="#">
+                        <span class="header__card-left">
+                           <svg class="header__card-icon" width="27px" height="27px">
+                              <use href="#cart"></use>
+                           </svg>
+                        </span>
+                        <div class="header__card-content">
+                           <span class="header__card-text">4 127 350 ₽</span>
+                           <span class="header__card-text">3 534 товаров </span>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="header__nav">
+            <div class="container">
+               <div class="header__inner">
+                  <ul class="nav__list  nav__list--main">
+                     <li class="nav__item-main">
+                        <a class="nav__link-main" href="#">Каталог товаров</a>
+                     </li>
+                     <li class="nav__item-main">
+                        <a class="nav__link-main" href="#">акции и скидки</a>
+                     </li>
+                  </ul>
+                  <ul class="nav__list  nav__list--default">
+                     <li class="nav__item">
+                        <a class="nav__link" href="#">Автосвет</a>
+                     </li>
+                     <li class="nav__item">
+                        <a class="nav__link" href="#">Автохимия</a>
+                     </li>
+                     <li class="nav__item">
+                        <a class="nav__link" href="#">Инструменты</a>
+                     </li>
+                     <li class="nav__item">
+                        <a class="nav__link" href="#">Крепеж</a>
+                     </li>
+                     <li class="nav__item">
+                        <a class="nav__link" href="#">Электрика</a>
+                     </li>
+                     <li class="nav__item">
+                        <a class="nav__link" href="#">Посуда</a>
+                     </li>
+                     <li class="nav__item">
+                        <a class="nav__link" href="#">Аксессуары</a>
+                     </li>
+                     <li class="nav__item">
+                        <a class="nav__link" href="#">БРЫЗГОВИКИ</a>
+                     </li>
+                     <li class="nav__item">
+                        <a class="nav__link" href="#">Фары</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="header__top-mobile">
+            <button class="header__top-mobile__btn">
+               <span></span>
+               <span></span>
+               <span></span>
+            </button>
+         </div>
+      </header>
+
+      <main class="main">
+         
+         <div class="breadcrumbs">
+            <div class="container">
+               <ul class="breadcrumbs__list">
+                  <li class="breadcrumbs__item">
+                     <a class="breadcrumbs__link" href="#">Главная</a>
+                  </li>
+                  <li class="breadcrumbs__item">
+                     <a class="breadcrumbs__link" href="#">Каталог</a>
+                  </li>
+                  <li class="breadcrumbs__item">
+                     <a class="breadcrumbs__link" href="#">Инструменты</a>
+                  </li>
+                  <li class="breadcrumbs__item">
+                     <a class="breadcrumbs__link active" href="#">Набор инструментов МАСТАК 94 предмета 01-094C [01-094C]</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         
+         <div class="product">
+            <div class="container">
+               <h3 class="product__name">Набор инструментов МАСТАК 94 предмета 01-094C [01-094C]</h3>
+               <div class="product__inner">
+                  <div class="product__left">
+                     <div class="product__slider">
+                        <button class="slider__btn  slider__btn--prev">
+                           <svg class="slider__btn-icon  slider__btn-icon--prev">
+                              <use href="#toggle-arrow"></use>
+                           </svg>
+                        </button>
+                        <div class="product__slider-wrapper">
+                           <div class="product__slider-item">
+                              <img class="product__img-small" src="assets/images/product-small-1.png" alt="">
+                           </div>
+                           <div class="product__slider-item active">
+                              <img class="product__img-small" src="assets/images/product-small-2.png" alt="">
+                           </div>
+                           <div class="product__slider-item">
+                              <img class="product__img-small" src="assets/images/product-small-3.png" alt="">
+                           </div>
+                           <div class="product__slider-item">
+                              <img class="product__img-small" src="assets/images/product-small-4.png" alt="">
+                           </div>
+                           <div class="product__slider-item">
+                              <div class="product__play-video">
+                                 <svg class="product__play-video__icon" width="10px" height="16px">
+                                    <use href="#product-play-video"></use>
+                                 </svg>
+                              </div>
+                           </div>
+                        </div>
+                        <button class="slider__btn  slider__btn--next">
+                           <svg class="slider__btn-icon  slider__btn-icon--next">
+                              <use href="#toggle-arrow"></use>
+                           </svg>
+                        </button>
+                     </div>
+                     <div class="product__main-photo">
+                        <div class="product__main-item">
+                           <img class="product__main-img" src="assets/images/product-main-1.png" width="440px" alt="">
+                        </div>
+                        <div class="product__main-item">
+                           <img class="product__main-img" src="assets/images/product-main-2.png" width="440px" alt="">
+                        </div>
+                        <div class="product__main-item">
+                           <img class="product__main-img" src="assets/images/product-main-3.png" width="440px" alt="">
+                        </div>
+                        <div class="product__main-item  active">
+                           <img class="product__main-img" src="assets/images/product-main-4.png" width="290px" alt="">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="product__info">
+                     <div class="product__info-item">
+                        Внутренний код товара: <span>21215</span>
+                     </div>
+                     <div class="product__info-item">
+                        Артикул: <span>01-094C</span>
+                     </div>
+                     <div class="product__info-prompt">Цена указана за набор инструментов из 94-х предметов </div>
+                     <div class="product__price">
+                        <div class="product__price-item">
+                           <h2 class="product__your-price-count">6 640 ₽</h2>
+                           <span class="product__your-price-text">ваша цена</span>
+                        </div>
+                        <div class="product__price-item  product__price-item--tooltip">
+                           <div class="product__price-count__tooltip">
+                              <span class="product__price-count">5 350 ₽</span>
+                              <svg class="product__tooltip-icon" width="16px" height="16px">
+                                 <use href="#info"></use>
+                              </svg>
+                           </div>
+                           <span class="product__price-text">опт</span>
+                           <div class="product__tooltip">Для получения оптовых цен, добавьте в корзину товаров ещё на <span>10
+                                 000 руб</span> (по оптовым ценам)
+                           </div>
+                        </div>
+                     </div>
+                     <button class="btn  product__btn">в корзину</button>
+                     <div class="product__stock">
+                        <div class="product__stock-item">
+                           <span class="product__stock-icon">
+                              <svg width="7px" height="6px">
+                                 <use href="#in-stock"></use>
+                              </svg>
+                           </span>
+                           <div class="product__stock-title">В наличии</div>
+                        </div>
+                        <div class="product__stock-item">
+                           <div class="product__stock-text">На центральном складе</div>
+                        </div>
+                        <div class="product__stock-item">
+                           <div class="product__stock-text">В 2-х наших магазинах</div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="about">
+                  <div class="about__tabs">
+                     <button class="about__tab-btn" type="button" data-tab="#about">О товаре</button>
+                     <button class="about__tab-btn" type="button" data-tab="#stock">Наличие товара</button>
+                  </div>
+                  <div class="about__content">
+                     <div class="about__item  about__item--description" id="about">
+                        <div class="about__description">
+                           <h5 class="about__title">Описание товара</h5>
+                           <div class="about__description-text">
+                              <p>Переносной кейс предназначен для размещения набора ручного инструмента Мастак 01-094 °C,
+                                 состоящего из 94 предметов, а также других, на усмотрение мастера, комплектаций. Применяется
+                                 в мастерских, выездными ремонтными бригадами, для работ в быту и т. д.</p>
+                              <p>Кейс изготовлен из качественного и ударопрочного ABS-пластика, обладает ярким дизайном, имеет
+                                 металлические замки с фиксатором CLIP-LOCK, ручка для переноски</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="about__item  about__item--store" id="stock">
+                        <div class="about__store">
+                           <div class="about__store-header">
+                              <div class="about__store--address">
+                                 <div class="about__title">Адрес</div>
+                              </div>
+                              <div class="about__store--schedule">
+                                 <div class="about__title">График работы</div>
+                              </div>
+                              <div class="about__store--availability">
+                                 <div class="about__title">Наличие</div>
+                              </div>
+                              <div class="about__store--phone-number">
+                                 <div class="about__title">Телефон</div>
+                              </div>
+                           </div>
+                           <div class="about__store-content">
+                              <ul class="about__store-list">
+                                 <li class="about__store-item">
+                                    <div class="about__store--address">
+                                       <h6 class="about__store-address__title">Центральный склад</h6>
+                                       <p class="about__store-text">Приморский край, ст. Жулевская, ул. Транспортная, 5-Г.</p>
+                                       <p class="about__store-text">Магазин находится в головном здании.</p>
+                                    </div>
+                                    <div class="about__store--schedule">
+                                       <p class="about__store-text">Пн-пт</p>
+                                       <p class="about__store-text">7:00 - 17:00</p>
+                                    </div>
+                                    <div class="about__store--availability">
+                                       <p>В наличии</p>
+                                    </div>
+                                    <div class="about__store--phone-number">
+                                       <a class="about__store-text" href="tel:88002514475">8-(800) 251-44-75</a>
+                                    </div>
+                                 </li>
+                                 <li class="about__store-item">
+                                    <div class="about__store--address">
+                                       <h6 class="about__store-address__title">м Октябрьское поле</h6>
+                                       <p class="about__store-text">Город Москва,</p>
+                                       <p class="about__store-text">ул. Народного Ополчения, 48 корпус 1</p>
+                                    </div>
+                                    <div class="about__store--schedule">
+                                       <p class="about__store-text">Пн-вс</p>
+                                       <p class="about__store-text">круглосуточно</p>
+                                    </div>
+                                    <div class="about__store--availability">
+                                       <p>В наличии</p>
+                                    </div>
+                                    <div class="about__store--phone-number">
+                                       <a class="about__store-text" href="tel:88002514475">8-(800) 251-44-75</a>
+                                    </div>
+                                 </li>
+                                 <li class="about__store-item">
+                                    <div class="about__store--address">
+                                       <h6 class="about__store-address__title">м Петровско-Разумовская</h6>
+                                       <p class="about__store-text">Город Москва,</p>
+                                       <p class="about__store-text">ул. Линии Октябрьской Железной Дороги, д. 2с2</p>
+                                    </div>
+                                    <div class="about__store--schedule">
+                                       <p class="about__store-text">Пн-вс</p>
+                                       <p class="about__store-text">круглосуточно</p>
+                                    </div>
+                                    <div class="about__store--availability">
+                                       <p>В наличии</p>
+                                    </div>
+                                    <div class="about__store--phone-number">
+                                       <a class="about__store-text" href="tel:88002514475">8-(800) 251-44-75</a>
+                                    </div>
+                                 </li>
+                                 <li class="about__store-item">
+                                    <div class="about__store--address">
+                                       <h6 class="about__store-address__title">м Профсоюзная</h6>
+                                       <p class="about__store-text">Город Москва</p>
+                                       <p class="about__store-text">Ломоносовский просп., д. 5</p>
+                                    </div>
+                                    <div class="about__store--schedule">
+                                       <p class="about__store-text">Пн-вс</p>
+                                       <p class="about__store-text">круглосуточно</p>
+                                    </div>
+                                    <div class="about__store--availability  not-availability">
+                                       <p>Нет в наличии</p>
+                                    </div>
+                                    <div class="about__store--phone-number">
+                                       <a class="about__store-text" href="tel:88002514475">8-(800) 251-44-75</a>
+                                    </div>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+         <div class="analogs">
+            <div class="container">
+               <h1 class="analogs__title">Аналоги</h1>
+               <div class="analogs__content">
+                  <button class="slider__btn  slider__btn-analog  slider__btn-analog--prev  swiper-button-prev">
+                     <svg class="slider__btn-icon  analogs__btn-icon--prev">
+                        <use href="#toggle-arrow"></use>
+                     </svg>
+                  </button>
+                  <div class="swiper-container  analogs__container">
+                     <div class="swiper-wrapper">
+                        <div class="analog swiper-slide">
+                           <a class="analog__preview" href="#">
+                              <img class="analog__img" src="assets/images/analogs-product-1.png" alt="">
+                              <div class="analog__name">Набор инструментов МАСТАК 94 предмета 01-094C [01-094C]</div>
+                           </a>
+                           <div class="analog__info">
+                              <div class="analog__availability">В наличии</div>
+                              <div class="analog__price">1 150 ₽</div>
+                              <div class="analog__wholesale">
+                                 <div class="product__wholesale-price">
+                                    708 ₽ (оптовая)
+                                    <svg class="analog__tooltip-icon" width="13px" height="13px">
+                                       <use href="#analog-info"></use>
+                                    </svg>
+                                 </div>
+                                 <div class="product__tooltip">Для получения оптовых цен, добавьте в корзину товаров ещё на
+                                    <span>10
+                                       000 руб</span> (по оптовым ценам)
+                                 </div>
+                              </div>
+                              <button class="btn  analog__btn">В корзину</button>
+                           </div>
+                        </div>
+                        <div class="analog swiper-slide">
+                           <a class="analog__preview" href="#">
+                              <img class="analog__img" src="assets/images/analogs-product-2.png" alt="">
+                              <div class="analog__name">Набор инструментов МАСТАК 94 предмета 01-094C [01-094C]</div>
+                           </a>
+                           <div class="analog__info">
+                              <div class="analog__availability">В наличии</div>
+                              <div class="analog__price">1 150 ₽</div>
+                              <div class="analog__wholesale">
+                                 <div class="product__wholesale-price">
+                                    708 ₽ (оптовая)
+                                    <svg class="analog__tooltip-icon" width="13px" height="13px">
+                                       <use href="#analog-info"></use>
+                                    </svg>
+                                 </div>
+                                 <div class="product__tooltip">Для получения оптовых цен, добавьте в корзину товаров ещё на
+                                    <span>10
+                                       000 руб</span> (по оптовым ценам)
+                                 </div>
+                              </div>
+                              <button class="btn  analog__btn">В корзину</button>
+                           </div>
+                        </div>
+                        <div class="analog swiper-slide">
+                           <a class="analog__preview" href="#">
+                              <img class="analog__img" src="assets/images/analogs-product-3.png" alt="">
+                              <div class="analog__name">Набор инструментов МАСТАК 94 предмета 01-094C [01-094C]</div>
+                           </a>
+                           <div class="analog__info">
+                              <div class="analog__availability  analog__availability--not-availability">Нет в наличии</div>
+                              <div class="analog__price">1 150 ₽</div>
+                              <div class="analog__wholesale">
+                                 <div class="product__wholesale-price">
+                                    708 ₽ (оптовая)
+                                    <svg class="analog__tooltip-icon" width="13px" height="13px">
+                                       <use href="#analog-info"></use>
+                                    </svg>
+                                 </div>
+                                 <div class="product__tooltip">Для получения оптовых цен, добавьте в корзину товаров ещё на
+                                    <span>10
+                                       000 руб</span> (по оптовым ценам)
+                                 </div>
+                              </div>
+                              <button class="btn  btn--grey  analog__btn">Сообщить о появлении</button>
+                           </div>
+                        </div>
+                        <div class="analog swiper-slide">
+                           <div class="analog__discount">
+                              <svg class="analog__discount-icon" width="12px" height="12px">
+                                 <use href="#discount"></use>
+                              </svg>
+                              <span>Скидка</span>
+                           </div>
+                           <a class="analog__preview" href="#">
+                              <img class="analog__img" src="assets/images/analogs-product-4.png" alt="">
+                              <div class="analog__name">Набор инструментов МАСТАК 94 предмета 01-094C [01-094C]</div>
+                           </a>
+                           <div class="analog__info">
+                              <div class="analog__availability">
+                                 В наличии
+                              </div>
+                              <div class="analog__price">
+                                 1 150 ₽
+                                 <div class="analog__old-price">3 990 ₽</div>
+                              </div>
+                              <div class="analog__wholesale">
+                                 <div class="product__wholesale-price">
+                                    708 ₽ (оптовая)
+                                    <svg class="analog__tooltip-icon" width="13px" height="13px">
+                                       <use href="#analog-info"></use>
+                                    </svg>
+         
+                                 </div>
+                                 <div class="analog__wholesale-old-price">2 347 ₽</div>
+                                 <div class="product__tooltip">Для получения оптовых цен, добавьте в корзину товаров ещё на
+                                    <span>10 000 руб</span> (по оптовым ценам)
+                                 </div>
+                              </div>
+                              <button class="btn  analog__btn">В корзину</button>
+                           </div>
+                        </div>
+                        <div class="analog swiper-slide">
+                           <a class="analog__preview" href="#">
+                              <img class="analog__img" src="assets/images/analogs-product-1.png" alt="">
+                              <div class="analog__name">Набор инструментов МАСТАК 94 предмета 01-094C [01-094C]</div>
+                           </a>
+                           <div class="analog__info">
+                              <div class="analog__availability">В наличии</div>
+                              <div class="analog__price">1 150 ₽</div>
+                              <div class="analog__wholesale">
+                                 <div class="product__wholesale-price">
+                                    708 ₽ (оптовая)
+                                    <svg class="analog__tooltip-icon" width="13px" height="13px">
+                                       <use href="#analog-info"></use>
+                                    </svg>
+                                 </div>
+                                 <div class="product__tooltip">Для получения оптовых цен, добавьте в корзину товаров ещё на
+                                    <span>10
+                                       000 руб</span> (по оптовым ценам)
+                                 </div>
+                              </div>
+                              <button class="btn  analog__btn">В корзину</button>
+                           </div>
+                        </div>
+                        <div class="analog swiper-slide">
+                           <a class="analog__preview" href="#">
+                              <img class="analog__img" src="assets/images/analogs-product-2.png" alt="">
+                              <div class="analog__name">Набор инструментов МАСТАК 94 предмета 01-094C [01-094C]</div>
+                           </a>
+                           <div class="analog__info">
+                              <div class="analog__availability">В наличии</div>
+                              <div class="analog__price">1 150 ₽</div>
+                              <div class="analog__wholesale">
+                                 <div class="product__wholesale-price">
+                                    708 ₽ (оптовая)
+                                    <svg class="analog__tooltip-icon" width="13px" height="13px">
+                                       <use href="#analog-info"></use>
+                                    </svg>
+                                 </div>
+                                 <div class="product__tooltip">Для получения оптовых цен, добавьте в корзину товаров ещё на
+                                    <span>10
+                                       000 руб</span> (по оптовым ценам)
+                                 </div>
+                              </div>
+                              <button class="btn  analog__btn">В корзину</button>
+                           </div>
+                        </div>
+                        <div class="analog swiper-slide">
+                           <a class="analog__preview" href="#">
+                              <img class="analog__img" src="assets/images/analogs-product-3.png" alt="">
+                              <div class="analog__name">Набор инструментов МАСТАК 94 предмета 01-094C [01-094C]</div>
+                           </a>
+                           <div class="analog__info">
+                              <div class="analog__availability  analog__availability--not-availability">Нет в наличии</div>
+                              <div class="analog__price">1 150 ₽</div>
+                              <div class="analog__wholesale">
+                                 <div class="product__wholesale-price">
+                                    708 ₽ (оптовая)
+                                    <svg class="analog__tooltip-icon" width="13px" height="13px">
+                                       <use href="#analog-info"></use>
+                                    </svg>
+                                 </div>
+                                 <div class="product__tooltip">Для получения оптовых цен, добавьте в корзину товаров ещё на
+                                    <span>10
+                                       000 руб</span> (по оптовым ценам)
+                                 </div>
+                              </div>
+                              <button class="btn  btn--grey  analog__btn">Сообщить о появлении</button>
+                           </div>
+                        </div>
+                        <div class="analog swiper-slide">
+                           <div class="analog__discount">
+                              <svg class="analog__discount-icon" width="12px" height="12px">
+                                 <use href="#discount"></use>
+                              </svg>
+         
+                              <span>Скидка</span>
+                           </div>
+                           <a class="analog__preview" href="#">
+                              <img class="analog__img" src="assets/images/analogs-product-4.png" alt="">
+                              <div class="analog__name">Набор инструментов МАСТАК 94 предмета 01-094C [01-094C]</div>
+                           </a>
+                           <div class="analog__info">
+                              <div class="analog__availability">В наличии</div>
+                              <div class="analog__price">1 150 ₽</div>
+                              <div class="analog__wholesale">
+                                 <div class="product__wholesale-price">
+                                    708 ₽ (оптовая)
+                                    <svg class="analog__tooltip-icon" width="13px" height="13px">
+                                       <use href="#analog-info"></use>
+                                    </svg>
+                                 </div>
+                                 <div class="product__tooltip">Для получения оптовых цен, добавьте в корзину товаров ещё на
+                                    <span>10
+                                       000 руб</span> (по оптовым ценам)
+                                 </div>
+                              </div>
+                              <button class="btn  analog__btn">В корзину</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <button class="slider__btn  slider__btn-analog  slider__btn-analog--next  swiper-button-next">
+                     <svg class="slider__btn-icon  analogs__btn-icon--next">
+                        <use href="#toggle-arrow"></use>
+                     </svg>
+                  </button>
+               </div>
+            </div>
+         </div>
+      </main>
+
+      <footer class="footer">
+         <div class="container">
+            <div class="footer__inner">
+               <div class="footer__left">
+                  <div class="footer__title">
+                     <svg class="footer__mail-icon" width="60px" height="50px">
+                        <use href="#mail"></use>
+                     </svg>
+                     <h1>Будьте в курсе новостей и акций</h1>
+                  </div>
+                  <div class="footer__text">Подпишитесь на рассылку и получайте первым информацию об акциях Richbee</div>
+               </div>
+               <div class="footer__right">
+                  <form action="/" class="footer__form">
+                     <input class="footer__input" type="email" name="email" placeholder="Электронная почта">
+                     <button class="btn  footer__btn">подписаться</button>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </div>
+   <div class="page__mask"></div>
+   <div class="modal">
+      <div class="modal__content">
+         <button class="modal__close" type="button">
+            <svg class="modal__close-icon" width="22px" height="22px">
+               <use href="#modal-close"></use>
+            </svg>
+         </button>
+         <h1 class="modal__title">Вход в личный кабинет </h1>
+         <form class="auth" action="/">
+            <label class="auth__group">
+               <span class="auth__title">Email</span>
+               <input class="auth__input" type="text" name="name" placeholder="Email">
+            </label>
+            <label class="auth__group">
+               <span class="auth__title">Пароль</span>
+               <input class="auth__input" type="password" name="password" placeholder="Пароль">
+            </label>
+            <a class="auth__forget-password" href="#">Забыли пароль?</a>
+            <div class="modal__footer">
+               <button class="btn  auth__btn">Войти</button>
+               <button class="btn  btn--grey  auth__btn--grey">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+            </div>
+         </form>
+      </div>
+   </div>
+
+   <script src="assets/js/app.js"></script>
+</body>
+
+</html>

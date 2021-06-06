@@ -1,0 +1,38 @@
+.logo {
+   display: flex;
+   align-items: center;
+}
+
+.logo__img {
+   margin-right: 1.2rem;
+
+   @include breakpoint($laptop-bp) {
+      margin-right: 1rem;
+      width: 33px;
+      height: 34px;
+   }
+
+   @include breakpoint($mobileL-bp) {
+      width: 23px;
+      height: 24px;
+   }
+
+   @include breakpoint($mobileS-bp) {
+      width: 30px;
+      height: 30px;
+   }
+}
+
+.logo__title {
+   @include breakpoint($laptop-bp) {
+      width: 86px;
+   }
+
+   @include breakpoint($mobileL-bp) {
+      width: 66px;
+   }
+
+   @include breakpoint($mobileS-bp) {
+      display: none;
+   }
+}

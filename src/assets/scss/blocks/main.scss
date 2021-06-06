@@ -1,0 +1,15 @@
+.main {
+   padding-top: 3rem;
+
+   @include breakpoint($laptop-bp) {
+      padding-top: 12rem;
+   }
+
+   @include breakpoint($tablet-bp) {
+      padding-top: 11rem;
+   }
+
+   @include breakpoint($mobileL-bp) {
+      padding-top: 9rem;
+   }
+}

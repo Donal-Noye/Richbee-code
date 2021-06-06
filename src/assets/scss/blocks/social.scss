@@ -1,0 +1,35 @@
+.social {
+   display: flex;
+   align-items: center;
+   padding: 0 2.7rem;
+
+   @include breakpoint($laptop-bp) {
+      padding: 0;
+      margin-bottom: 1.8rem;
+   }
+}
+
+.social__item {
+   margin-right: 1.5rem;
+
+   &:last-child {
+      margin-right: 0;
+   }
+
+   @include breakpoint($laptop-bp) {
+      margin-right: 2.5rem;
+   }
+}
+
+.social__icon {
+   display: block;
+   fill: #B8B8B8;
+
+   transition: fill .2s ease;
+
+   &:hover {
+      fill: #fff;
+   }
+
+
+}

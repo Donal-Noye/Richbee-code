@@ -1,0 +1,211 @@
+.about {
+   padding: 12rem 0 8rem;
+
+   @include breakpoint($laptop-891-bp) {
+      padding-top: 4rem;
+   }
+
+   @include breakpoint($tablet-bp) {
+      padding-bottom: 3rem;
+   }
+}
+
+.about__tabs {
+   display: flex;
+
+   position: relative;
+
+   &:after {
+      content: '';
+      width: 100%;
+      height: 1px;
+
+      background-color: #DFDFDF;
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+   }
+}
+
+.about__tab-btn {
+   margin-right: 4rem;
+   padding: .6rem 0;
+
+   font-size: 2.2rem;
+   color: $grey;
+
+   position: relative;
+
+   &.active {
+      color: inherit;
+      font-weight: 500;
+
+      &:after {
+         opacity: 1;
+         transform: translateY(0);
+      }
+   }
+
+   &:last-child {
+      margin-right: 0;
+   }
+
+   &:after {
+      content: '';
+      width: 100%;
+      height: 3px;
+
+      opacity: 0;
+      background-color: $yellow;
+
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      z-index: 1;
+
+      transform: translateY(20px);
+      transition: all .4s ease;
+   }
+
+   @include breakpoint($laptop-891-bp) {
+      font-size: 1.8rem;
+   }
+
+   @include breakpoint($tablet-bp) {
+      margin-right: 2rem;
+   }
+}
+
+.about__content {
+   padding-top: 3rem;
+}
+
+.about__item {
+   opacity: 0;
+   visibility: hidden;
+
+   transition: opacity .6s ease;
+
+   &.active {
+      opacity: 1;
+      visibility: visible;
+   }
+}
+
+.about__description {
+   display: flex;
+   justify-content: space-between;
+}
+
+.about__title {
+   font-size: 2rem;
+   font-weight: 500;
+   color: $grey;
+
+   @include breakpoint($laptop-891-bp) {
+      font-size: 1.4rem;
+   }
+
+   @include breakpoint($tablet-bp) {
+      font-size: 1.2rem;
+   }
+}
+
+.about__description-text {
+   width: 83%;
+
+   p {
+      margin-bottom: 1.8rem;
+
+      color: #0B0B0B;
+      line-height: 1.3;
+
+      @include breakpoint($mobileL-bp) {
+         font-size: 1.2rem;
+      }
+   }
+}
+
+.about__store {
+   &--address {
+      width: $store-address-width;
+   }
+
+   &--schedule {
+      width: $store-schedule-width;
+   }
+
+   &--availability {
+      width: $store-availability-width;
+
+      p {
+         font-size: 1.6rem;
+         color: $green;
+
+         @include breakpoint($tablet-bp) {
+            font-size: 1rem;
+         }
+      }
+
+      &.not-availability {
+         p {
+            color: #797979;
+         }
+      }
+   }
+
+   &--phone-number {
+      width: $store-phone-number-width;
+   }
+}
+
+.about__store-content {
+   margin: 0 -2rem;
+}
+
+.about__store-header {
+   display: flex;
+   margin-bottom: 2rem;
+}
+
+.about__store-item {
+   display: flex;
+   align-items: center;
+   padding: 2.5rem 2rem;
+
+   &:nth-child(2n - 1) {
+      background-color: #F8F8F8;
+   }
+}
+
+.about__store-address__title {
+   margin-bottom: 2.4rem;
+
+   font-size: 1.8rem;
+   font-weight: 500;
+   color: #0B0B0B;
+
+   @include breakpoint($laptop-891-bp) {
+      font-size: 1.6rem;
+   }
+
+   @include breakpoint($tablet-bp) {
+      font-size: 1.4rem;
+   }
+}
+
+.about__store-text {
+   font-size: 1.6rem;
+   color: #0B0B0B;
+   line-height: 1.4;
+
+   @include breakpoint($laptop-891-bp) {
+      font-size: 1.4rem;
+   }
+
+   @include breakpoint($tablet-bp) {
+      font-size: 1rem;
+   }
+}

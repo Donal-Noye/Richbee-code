@@ -1,0 +1,108 @@
+.nav__list {
+   display: flex;
+
+   &--main {
+      position: relative;
+
+      &:after {
+         content: '';
+         width: 1px;
+         height: 24px;
+
+         background-color: #B8B8B8;
+
+         position: absolute;
+         right: 0;
+         top: 50%;
+         z-index: 1;
+
+         transform: translateY(-50%);
+
+         @include breakpoint($laptop-bp) {
+            display: none;
+         }
+      }
+
+      @include breakpoint($laptop-bp) {
+         margin-bottom: 3rem;
+      }
+   }
+
+   &--default {
+      display: flex;
+      justify-content: space-between;
+
+      width: 74%;
+      margin-left: 2.5rem;
+
+      @include breakpoint($laptop-bp) {
+         margin-left: 0;
+      }
+   }
+}
+
+.nav__item-main {
+   margin-right: 2.5rem;
+
+   @include breakpoint($laptop-bp) {
+      display: flex;
+      margin-right: 0;
+      margin-bottom: .5rem;
+      background-color: #F8F8F8;
+
+      &:hover {
+         background-color: #EFEFEF;
+      }
+   }
+}
+
+.nav__link-main {
+   font-weight: 700;
+   text-transform: uppercase;
+   white-space: nowrap;
+
+   @include breakpoint($laptop-bp) {
+      font-size: 1.8rem;
+      padding-left: 2rem;
+
+      width: 100%;
+      height: 50px;
+
+      line-height: 50px;
+   }
+}
+
+.nav__item {
+   @include breakpoint($laptop-bp) {
+      display: flex;
+      border-left: 2px solid $yellow;
+      margin-bottom: 1.2rem;
+
+      &:hover {
+         background-color: $yellow;
+      }
+   }
+}
+
+.nav__link {
+   text-transform: uppercase;
+   color: #B8B8B8;
+   white-space: nowrap;
+
+   &:hover {
+      text-decoration: underline;
+   }
+
+   @include breakpoint($laptop-bp) {
+      padding-left: 2rem;
+      font-size: 1.7rem;
+      color: $black;
+      width: 100%;
+      height: 45px;
+      line-height: 45px;
+
+      &:hover {
+         text-decoration: none;
+      }
+   }
+}
